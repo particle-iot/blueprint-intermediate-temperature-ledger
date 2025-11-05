@@ -12,6 +12,10 @@
 
 #define TMP112A_ADDR 0x48
 
+#ifndef SYSTEM_VERSION_v620
+SYSTEM_THREAD(ENABLED); // System thread defaults to on in 6.2.0 and later and this line is not required
+#endif
+
 // Let Device OS manage the connection to the Particle Cloud
 SYSTEM_MODE(AUTOMATIC);
 

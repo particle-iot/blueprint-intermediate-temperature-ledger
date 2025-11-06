@@ -22,37 +22,47 @@ This blueprint shows how to use a Device to Cloud Ledger with the Muon's onboard
 
 ## Steps
 
-1. **Make a Device to Cloud Ledger instance** named `temperature`:
+1. **Clone this repository:**
 
-   1. Navigate to the Ledger cloud service
-      ![Navigate to Ledger cloud services](./images/navigate-to-ledger.png)
-   2. Create a new Ledger
-      ![Create new Ledger](./images/create-new-ledger.png)
-   3. Choose Device to Cloud Ledger
-      ![Device to Cloud](./images/device-to-cloud.png)
-   4. Give the new Ledger a name and a description
-      ![Ledger name and description](./images/name-and-description.png)
-
-2. **Clone this repository:**
    ```bash
    git clone https://github.com/particle-iot/blueprint-intermediate-temperature-ledger.git
    cd blueprint-intermediate-temperature-ledger
    ```
-3. **Open the project** in Particle Workbench or your preferred editor.
-4. **Flash the firmware** to your device:
-   ```bash
-   particle flash <device-name>
-   ```
-5. **Open a serial terminal** at 115200 baud (8N1):
-   ```bash
-   particle serial monitor --follow
-   ```
-6. **Observe output** in your terminal. You’ll see a timestamped line like:
+
+2. **Open the project** in Particle Workbench or your preferred editor.
+
+3. **Flash to your device:**
+
+   1. Configure project for your device using Particle Workbench and the command pallette (cmd / ctrl + shift + p):
+      ![Configure project for device](./images/configure-project.png)
+   2. Select your device model and Device OS release:
+      ![Select device](./images/configure-msom.png)
+      ![Select device OS](./images/configure-device-os.png)
+
+4. **Open a serial terminal**:
+
+   1. Open a serial monitor session by choosing `Particle: Serial monitor` from the command pallette:
+      ![Serial monitor](./images/serial-monitor.png)
+
+5. **Observe output** in your terminal. You’ll see a timestamped line like:
+
    ```
    0000010545 [app] INFO: Temperature: 26.88 C / 80.38 F
    ```
+
+6. **Make a Device to Cloud Ledger instance** named `temperature`:
+
+   1. Navigate to the Ledger cloud service:
+      ![Navigate to Ledger cloud services](./images/navigate-to-ledger.png)
+   2. Create a new Ledger:
+      ![Create new Ledger](./images/create-new-ledger.png)
+   3. Choose Device to Cloud Ledger:
+      ![Device to Cloud](./images/device-to-cloud.png)
+   4. Give the new Ledger a name and a description:
+      ![Ledger name and description](./images/name-and-description.png)
+
 7. **Get Ledger instance** for the device:
-   1. Back in the Particle console, navigate to your `temperature` Ledger and choose "Get Instance"
+   1. Back in the Particle console, navigate to your `temperature` Ledger and choose "Get Instance":
       ![Get Ledger instance](./images/get-instance.png)
       ![Ledger instance](./images/ledger-instance.png)
 

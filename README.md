@@ -1,7 +1,9 @@
 # Blueprint - Intermediate - Temperature Device to Cloud Ledger
 
 **Difficulty:** Intermediate
+
 **Estimated Time:** 30 minutes
+
 **Hardware Needed:** Muon
 
 ---

@@ -1,7 +1,7 @@
 # blueprint.yaml
 slug: blueprint-intermediate-temperature-ledger
 type: Tutorial
-category: "Blueprint Basics"
+category: "Sensors and data collection"
 expertiseLevel: "Intermediate" # Beginner | Intermediate | Advanced
 tags: ["I2C", "Ledger", "Console"]
 icon: assets/temperature.svg # relative path to an image or SVG

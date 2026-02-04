@@ -3,16 +3,21 @@ slug: blueprint-intermediate-temperature-ledger
 type: Tutorial
 category: "Sensors and data collection"
 expertiseLevel: "Intermediate" # Beginner | Intermediate | Advanced
+<<<<<<< Updated upstream
 tags: ["I2C", "Ledger", "Console"]
 icon: assets/temperature.svg # relative path to an image or SVG
+=======
+tags: ["I2C", "Sensors", "Console"]
+icon: assets/hero.jpg # relative path to an image or SVG
+>>>>>>> Stashed changes
 gitrepo: https://github.com/particle-iot/blueprint-intermediate-temperature-ledger
 name: "Blueprint Intermediate Temperature Ledger"
 shortDescription: "Learn how to create a Device to Cloud Ledger using the Muon's I2C sensor."
 version: 1.0.0 # use SemVer
 models: ["Muon"] # e.g., ["P2", "Boron 404X"]
 language: ["C++"]
-cloudServices: [] # e.g., ["IFTTT", "Google Sheets"]
-integrations: [] # e.g., ["Webhook"]
+cloudServices: []
+integrations: ["Ledger"]
 supportedDevices:
   - name: Particle Muon
     link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/

@@ -14,7 +14,7 @@ language: ["C++"]
 cloudServices: []
 integrations: ["Ledger"]
 supportedDevices:
-  - name: Particle Muon
+  - name: Muon
     link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/
 webIdeLink:
 webSetupLink:
